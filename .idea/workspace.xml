@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33810552-5f1d-42bc-9e97-72b57fbf1220" name="Changes" comment="success : 30036">
-      <change afterPath="$PROJECT_DIR$/src/problem/Problem_1260.java" afterDir="false" />
+    <list default="true" id="33810552-5f1d-42bc-9e97-72b57fbf1220" name="Changes" comment="success : 14940">
+      <change afterPath="$PROJECT_DIR$/src/problem/Problem_15971.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -71,7 +71,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20231223_0001",
+    "com.google.cloudcode.ide_session_index": "20231228_0001",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,7 +81,20 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Problem_1260">
+  <component name="RunManager" selected="Application.Problem_15971">
+    <configuration name="Problem_11724" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem.Problem_11724" />
+      <module name="baekjoon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="problem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Problem_1260" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="problem.Problem_1260" />
       <module name="baekjoon" />
@@ -95,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem_26257" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problem.Problem_26257" />
+    <configuration name="Problem_14940" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem.Problem_14940" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
@@ -108,21 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem_28256" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problem.Problem_28256" />
-      <module name="baekjoon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="problem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem_29160" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problem.Problem_29160" />
+    <configuration name="Problem_15971" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem.Problem_15971" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Problem_15971" />
+        <item itemvalue="Application.Problem_14940" />
+        <item itemvalue="Application.Problem_11724" />
         <item itemvalue="Application.Problem_1260" />
         <item itemvalue="Application.Problem_30036" />
-        <item itemvalue="Application.Problem_29160" />
-        <item itemvalue="Application.Problem_28256" />
-        <item itemvalue="Application.Problem_26257" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +171,11 @@
       <workItem from="1700638544119" duration="4073000" />
       <workItem from="1700645052270" duration="3236000" />
       <workItem from="1703296710773" duration="2956000" />
+      <workItem from="1703557761171" duration="2330000" />
+      <workItem from="1703567277070" duration="598000" />
+      <workItem from="1703571582566" duration="285000" />
+      <workItem from="1703639642498" duration="6506000" />
+      <workItem from="1703727292470" duration="6849000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1698822602132</created>
@@ -235,7 +240,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703296746488</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="success : 1260">
+      <created>1703557791328</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703557791328</updated>
+    </task>
+    <task id="LOCAL-00011" summary="success : 14940">
+      <created>1703685479259</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703685479259</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +280,8 @@
     <MESSAGE value="success : 28256" />
     <MESSAGE value="success : 29160" />
     <MESSAGE value="success : 30036" />
-    <option name="LAST_COMMIT_MESSAGE" value="success : 30036" />
+    <MESSAGE value="success : 1260" />
+    <MESSAGE value="success : 14940" />
+    <option name="LAST_COMMIT_MESSAGE" value="success : 14940" />
   </component>
 </project>
