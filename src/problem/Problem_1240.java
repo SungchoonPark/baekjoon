@@ -9,8 +9,7 @@ public class Problem_1240 {
     static StringTokenizer st;
     static StringBuilder sb;
     static int n, m;
-    static int[][] array;
-    static int[][] distance;
+    static List<Edge>[] array;
     static boolean[] isVisited;
 
     public static void main(String[] args) throws IOException {
@@ -20,17 +19,19 @@ public class Problem_1240 {
         st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
-        array = new int[n + 1][n + 1];
-        distance = new int[n + 1][n + 1];
+        array = new ArrayList[n+1];
+
+        for(int i=0; i<n+1; i++) {
+            array[i] = new ArrayList<>();
+        }
 
         for (int i = 0; i < n - 1; i++) {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            int length = Integer.parseInt(st.nextToken());
-
-            array[a][b] = array[b][a] = 1;
-            distance[a][b] = distance[b][a] = length;
+            int len = Integer.parseInt(st.nextToken());
+            array[a].add(new Edge(b, len));
+            array[b].add(new Edge(a, len));
         }
 
         for (int i = 0; i < m; i++) {
@@ -44,27 +45,36 @@ public class Problem_1240 {
     }
 
     static void bfs(int startNode, int goalNode) {
-        Queue<Integer> q = new LinkedList<>();
+        Queue<Edge> q = new LinkedList<>();
         isVisited = new boolean[n + 1];
-        int[] distTmp = new int[n + 1];
 
         isVisited[startNode] = true;
-        q.add(startNode);
+        q.add(new Edge(startNode, 0));
 
         while (!q.isEmpty()) {
-            startNode = q.poll();
+            Edge curNode = q.poll();
+            if (curNode.next == goalNode) {
+                sb.append(curNode.distance).append("\n");
+                return;
+            }
 
-            for (int i = 1; i < n + 1; i++) {
-                if (array[startNode][i] == 1 && !isVisited[i]) {
-                    q.add(i);
-                    isVisited[i] = true;
-                    distTmp[i] = distTmp[startNode] + distance[startNode][i];
-                    if (i == goalNode) {
-                        sb.append(distTmp[i]).append("\n");
-                        return;
-                    }
+            for (Edge node : array[curNode.next]) {
+                if (!isVisited[node.next]) {
+                    q.add(new Edge(node.next, curNode.distance + node.distance));
+                    isVisited[node.next] = true;
                 }
             }
+
         }
+    }
+}
+
+class Edge {
+    int next;
+    int distance;
+
+    public Edge(int next, int distance) {
+        this.next = next;
+        this.distance = distance;
     }
 }
